@@ -1,15 +1,34 @@
-/* Write your CSS! */
+@mixin font-size($sizeValue: 1.8){
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+$vspace: 1em;
+$vspace-med: 1.8em;
+$vspace-small	: 0.4em;
+$hspace: 2.6%;
 
 html {
   height: 100%;
+  font-size: 62.5%;
 }
 
 body {
   background-color: #666;
   color: #fff;
-  margin: 8px 5%;
+  margin: 8px $hspace;
+	@include font-size(1.4);
+}
+
+h1 {
+	margin-bottom: $vspace;
 }
 
 a {
 	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline
 }
