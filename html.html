@@ -1,14 +1,43 @@
 <!-- $title HTML -->
 <!-- @include _header -->
 
-  <section id="main">
-    <h2>child: &gt;</h2>
-    <p>ul&gt;li</p>
-    <pre>
+<section class="column">
+	<h2>child: &gt;</h2>
+	<p>ul&gt;li</p>
+	<pre>
 &lt;ul&gt;
-  &lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
-    </pre>
-  </section>
-  
+	</pre>
+
+	<h2>sibling: +</h2>
+	<p>h2+p+bq</p>
+		<pre>
+&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;/blockquote&gt;
+		</pre>
+
+	<h2>climb: ^</h2>
+	<p>ul&gt;li^p</p>
+		<pre>
+&lt;ul&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+		</pre>
+</section>
+
+<section class="column">
+	<h2>multiplication: *</h2>
+	<p>ul&gt;li*3</p>
+	<pre>
+&lt;ul&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+	</pre>
+</section>
+
 <!-- @include _footer -->
